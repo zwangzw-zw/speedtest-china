@@ -1,5 +1,6 @@
 /opt/speedtest -s 25858	#China Mobile Group Beijing Co.Ltd	speedtest.bmcc.com.cn.prod.hosts.ooklaserver.net
 /opt/speedtest -s 43752	#BJ Unicom	beijing.unicomtest.com
+/opt/speedtest -s 35722 #TJ Telecom tjrate.tjtele.com 
 
 /opt/speedtest -s 24447	#China Unicom 5G	5g.shunicomtest.com.prod.hosts.ooklaserver.net
 /opt/speedtest -s 3633	#China Telecom	speedtest1.online.sh.cn
