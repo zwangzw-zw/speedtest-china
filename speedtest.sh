@@ -1,4 +1,6 @@
-SERVERS="25858 25637 43752 35722 24447 36646 41852"
+#SERVERS="25858 25637 43752 35722 24447 36646 41852"
+
+SERVERS="29105 44176 26940 16145 35722"
 
 for i in $SERVERS;
         do 
@@ -11,10 +13,10 @@ done
 
 #/opt/speedtest -s 25858	#China Mobile Group Beijing Co.Ltd	speedtest.bmcc.com.cn.prod.hosts.ooklaserver.net
 #/opt/speedtest -s 43752	#BJ Unicom	beijing.unicomtest.com
-#/opt/speedtest -s 35722 #TJ Telecom tjrate.tjtele.com 
+#/opt/speedtest -s 35722        #TJ Telecom tjrate.tjtele.com 
 
 #/opt/speedtest -s 24447	#China Unicom 5G	5g.shunicomtest.com.prod.hosts.ooklaserver.net
-#/opt/speedtest -s 3633	#China Telecom	speedtest1.online.sh.cn
+#/opt/speedtest -s 3633	        #China Telecom	speedtest1.online.sh.cn
 #/opt/speedtest -s 25637	#Chinamobile-5G	speedtest4.sh.chinamobile.com.prod.hosts.ooklaserver.net
 
 #/opt/speedtest -s 36646	#China Unicom HeNan 5G	5gtest.shangdu.com
