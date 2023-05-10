@@ -1,13 +1,15 @@
+curl --user-agent "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/112.0" -s "https://beta.speedtest.net/api/js/servers?engine=js&search=china&limit=200" | jq -r '.[] | select(.country == "China") | "\(.name) \(.sponsor),\(.id)"' | awk -F ',' '{printf "\033[1;31m%s\033[0m\n", $1; system("/opt/speedtest -s" $2)}'     
+
 #SERVERS="25858 25637 43752 35722 24447 36646 41852"
 
-SERVERS="25858" # 29105 44176 26940 16145 35722"
+#SERVERS="25858" # 29105 44176 26940 16145 35722"
 
-for i in $SERVERS;
-        do 
-                
-                /opt/speedtest -p no -s $i  
-                
-done
+#for i in $SERVERS;
+#        do 
+#                
+#                /opt/speedtest -p no -s $i  
+#                
+#done
 
 
 sudo nexttrace 36.112.185.161
