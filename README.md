@@ -30,7 +30,7 @@ To use this tool, follow these steps:
 
 ## Output
 
-The tool will output the name of the server being tested, along with the download and upload speeds in Mbps. If the `speedtest` command fails for a server, the tool will print an error message in red. The output will also include colored text to indicate the sponsor being tested and the name of the server being tested.
+The tool will output the name of the server being tested, along with the download and upload speeds in Mbps. 
 
 ## Disclaimer
 
