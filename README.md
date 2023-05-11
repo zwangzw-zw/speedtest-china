@@ -10,10 +10,6 @@ When benchmarking the network download/upload speed from an overseas location to
 
 By testing the speed of servers hosted by each telecom provider, you can assess the network performance and identify the optimal route for your specific requirements. This information can be valuable for various scenarios, such as content delivery, cloud services, or general network performance evaluation.
 
-## Disclaimer
-
-This tool is provided "as is" and without warranties of any kind, whether express or implied. You use this tool at your own risk, and you are solely responsible for any consequences arising from using this tool.
-
 ## Prerequisites
 
 Before running this tool, please make sure you have the `speedtest` command-line tool installed on your system. You can obtain the `speedtest` tool from the official Speedtest.net website: [Speedtest.net Apps](https://www.speedtest.net/apps/cli). Once you have the `speedtest` tool, ensure it is in a search path such as `/usr/local/bin` so that it can be executed by the tool.
@@ -35,6 +31,10 @@ To use this tool, follow these steps:
 ## Output
 
 The tool will output the name of the server being tested, along with the download and upload speeds in Mbps. If the `speedtest` command fails for a server, the tool will print an error message in red. The output will also include colored text to indicate the sponsor being tested and the name of the server being tested.
+
+## Disclaimer
+
+This tool is provided "as is" and without warranties of any kind, whether express or implied. You use this tool at your own risk, and you are solely responsible for any consequences arising from using this tool.
 
 ## License
 
