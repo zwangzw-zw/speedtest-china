@@ -35,8 +35,9 @@
 import sys
 import subprocess
 import json
+import requests
 
-headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/112.0"}
+
 
 print("\033[1mPlease use the following inputs to test sponsors:\033[0m")
 print("\033[1;36m1: \033[1m联通 (Unicom)\033[0m (\033[1;34mpython3 speedtest.py 1\033[0m)")
@@ -47,7 +48,11 @@ print("\033[1;36mNo input: \033[1mTest all sponsors\033[0m (\033[1;34mpython3 sp
 
 # Send a GET request to the Speedtest API to get servers in China
 url = "https://beta.speedtest.net/api/js/servers?engine=js&search=china&limit=200"
-response = subprocess.run(["curl", "-s", "-H", f"User-Agent: {headers['User-Agent']}", url], capture_output=True)
+headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/112.0"}
+response = requests.get(url, headers=headers)
+
+
+
 server_data = json.loads(response.stdout.decode())
 
 # Create a dictionary to store the servers for each sponsor
